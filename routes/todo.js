@@ -93,14 +93,16 @@ router.get('/', function (req, res) {
   }
 
   // Send the todo form back to the client
+  // ***********************************************
+  // This is the code changed for the new schema   *
+  // ***********************************************
   res.render('todo', {
     title : 'Express Todo Example',
     todo: {
-      title: '',
-      description: '',
-      priority: 1,
-      due_date: new Date(),
-      complete: false
+      item: '',
+      quantity: 1,
+      price: 10,
+      found: false
     }
   });
 });
@@ -134,11 +136,10 @@ router.post('/', function (req, res, next) {
         sendError(req, res, err, "Could not find that task");
       } else {
         // Found it. Now update the values based on the form POST data.
-        foundTodo.title = req.body.title;
-        foundTodo.description = req.body.description;
-        foundTodo.priority = req.body.priority;
-        foundTodo.due_date = req.body.due_date;
-        foundTodo.complete = (req.body.complete) ? req.body.complete : false;
+        foundTodo.item = req.body.item;
+        foundTodo.quantity = req.body.quantity;
+        foundTodo.price = req.body.price;
+        foundTodo.found = (req.body.found) ? req.body.found : false;
 
         // Save the updated item.
         foundTodo.save(function (err, newOne) {  // this is how you save records to the db: save
