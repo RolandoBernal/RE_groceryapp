@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style-jrb.css' />
+    <link rel='stylesheet' href='/stylesheets/todo.css' />
+  </head>
+  <body class="body-background-img">
+  <!-- <body background="/images/notebookpaper.jpg"> -->
+
+    <div class="welcome-user">
+      Welcome <b><%= user %></b>!
+    </div>
+    <div class="the-header">
+      <a href="/todo">Create a new task</a> | <a href="/user/profile">View profile</a> | <a href="/">Logout</a>
+    </div>
+
+    <div class="the-message">
+      <h1><%= message %></h1>
+    </div>
+
+
+    <% for (var t = 0; t < tasks.length; t++) { %>
+      <% var currentTask = tasks[t]; %>
+      <div class="todo-item" id="todo_<%= currentTask._id %>">
+        <div>
+          <b>User:</b> <%= currentTask.user %>
+        </div>
+        <div>
+          <b>Title:</b> <%= currentTask.title %>
+        </div>
+        <div>
+          <b>Description:</b> <%= currentTask.description %>
+        </div>
+        <div>
+          <b>Priority:</b> <%= currentTask.priority %>
+        </div>
+        <div>
+          <b>Due date:</b> <%= currentTask.due_date.getMonth() + 1 %> / <%= currentTask.due_date.getDate() %> / <%= currentTask.due_date.getFullYear() %>
+        </div>
+        <div class="actions">
+          <a class="deleteButton" id="<%= currentTask._id %>">Delete</a>
+          <a class="editButton" id="<%= currentTask._id %>">Edit</a>
+          <a class="completeButton" id="<%= currentTask._id %>">Complete</a>
+        </div>
+      </div>
+    <% } %>
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/javascripts/todoHandler.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,73 @@
+/* --- Fonts selection ---*/
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata);
+body {
+  padding: 10px 30px;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'Special Elite', cursive;
+}
+
+.body-background-img {
+  color: #000;
+  text-align: left;
+  padding: 18% 24%;
+  /*border-top: 10px solid #ffa949;*/
+  margin: 30px 0 60px;
+  background: #434a52 url('/images/repeating-horizontal.png') center;
+  /*background-size: cover;*/
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.the-header {
+  float: left;
+  position: fixed;
+  margin-top: 0px;
+  top: 31px;
+}
+
+.welcome-user {
+  float: right;
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+  left: 60%;
+}
+
+.the-message {
+  position: fixed;
+  top: 13%;
+}
+
+.formfield {
+  margin: 5px 0;
+}
+
+
+input + label.error {
+  background-color: #A7383E;
+  color: #FFE5E7;
+  clear: both;
+  padding: 3px;
+  margin: 0 0 0 10px;
+  border: 1px dotted red;
+  border-radius: 4px;
+}
+
+
+
+.actions {
+  padding: 10px 0 0 0;
+}
+
+.deleteButton, .submitButton, .editButton {
+  margin: 0 10px 0 0;
+}
+
+

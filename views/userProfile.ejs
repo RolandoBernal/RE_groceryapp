@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= username %> profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style-jrb.css' />
+    <link rel='stylesheet' href='/stylesheets/todo.css' />
+  </head>
+  <body class="body-background-img">
+    <div class="the-header">
+      <a href="/todo">Create a new task</a> | <a href="/todo/list">List tasks</a> | <a href="/">Logout</a>
+    </div>
+
+
+    <div>
+      <b>Username:</b> <%= username %>
+    </div>
+    <div>
+      <b>Number of tasks:</b> <%= tasks.length %>
+    </div>
+  </body>
+</html>
