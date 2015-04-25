@@ -25,31 +25,39 @@
 
 
     <% for (var t = 0; t < tasks.length; t++) { %>
-      <% var currentTask = tasks[t]; %>
-      <div class="todo-item" id="todo_<%= currentTask._id %>">
-        <div>
-          <b>User:</b> <%= currentTask.user %>
-        </div>
-        <div>
-          <b>Title:</b> <%= currentTask.title %>
-        </div>
-        <div>
-          <b>Description:</b> <%= currentTask.description %>
-        </div>
-        <div>
-          <b>Priority:</b> <%= currentTask.priority %>
-        </div>
-        <div>
-          <b>Due date:</b> <%= currentTask.due_date.getMonth() + 1 %> / <%= currentTask.due_date.getDate() %> / <%= currentTask.due_date.getFullYear() %>
-        </div>
-        <div class="actions">
-          <a class="deleteButton" id="<%= currentTask._id %>">Delete</a>
-          <a class="editButton" id="<%= currentTask._id %>">Edit</a>
-          <a class="completeButton" id="<%= currentTask._id %>">Complete</a>
-        </div>
-      </div>
-    <% } %>
-
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Found</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% var currentTask = tasks[t]; %>
+          <tr class="todo-item" id="todo_<%= currentTask._id %>">
+            <td>
+              <%= currentTask.title %>
+            </td>
+            <td>
+              <%= currentTask.priority %>
+            </td>
+            <td>
+              <%= currentTask.priority %>
+            </td>
+            <td>
+              <a class="deleteButton" id="<%= currentTask._id %>">Delete</a>
+              <a class="editButton" id="<%= currentTask._id %>">Edit</a>
+            </td>
+            <td>
+              <a class="completeButton" id="<%= currentTask._id %>">Found</a>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="/javascripts/todoHandler.js"></script>
 
