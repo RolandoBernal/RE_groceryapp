@@ -8,13 +8,13 @@
     <link rel='stylesheet' href='/stylesheets/style-jrb.css' />
     <link rel='stylesheet' href='/stylesheets/todo.css' />
   </head>
-  <body class="body-background-img">
+  <body class="body-background-img-additem">
     <div>
-      <a href="/todo/list">Show all tasks</a> | <a href="/user/profile">View profile</a>
+      <a href="/todo/list">Shopping List</a> | <a href="/user/profile">View profile</a>
     </div>
 
     <div>
-      <h1>Create a task</h1>
+      <h1>Add Item</h1>
     </div>
 
 
@@ -23,23 +23,18 @@
       <input type="hidden" name="db_id" value="<%= todo._id %>">
 
       <div class="formfield">
-        <div class="formfield--prompt">Title:</div>
-        <input type="text" id="todoTitle" name="title" value="<%= todo.title %>">
+        <div class="formfield--prompt">Item:</div>
+        <input type="text" id="todoTitle" name="item" value="<%= todo.item %>">
       </div>
       <div class="formfield">
-        <div class="formfield--prompt">Description:</div>
-        <textarea id="todoDescription" name="description"><%= todo.description %></textarea>
+        <div class="formfield--prompt">Quantity:</div>
+        <input type="text" id="todoPriority" name="quantity" value="<%= todo.quantity %>">
       </div>
       <div class="formfield">
-        <div class="formfield--prompt">Priority:</div>
-        <input type="text" id="todoPriority" name="priority" value="<%= todo.priority %>">
+        <div class="formfield--prompt">Price:</div>
+        <input type="text" id="todoPriority" name="price" value="<%= todo.price %>">
       </div>
-      <div class="formfield">
-        <div class="formfield--prompt">Complete by:</div>
-        <input type="text" id="todoDuedate"
-          name="due_date"
-          value="<%= todo.due_date.getMonth() + 1 %> / <%= todo.due_date.getDate() %> / <%= todo.due_date.getFullYear() %>">
-      </div>
+
       <!-- <div class="formfield">
         <div class="formfield--prompt">Completed:</div>
         <input type="checkbox" id="todoDone" name="complete">

@@ -9,17 +9,19 @@
     <link rel='stylesheet' href='/stylesheets/style-jrb.css' />
     <link rel='stylesheet' href='/stylesheets/todo.css' />
   </head>
-  <body class="body-background-img">
+  <body class="body-background-img-userprofile">
     <div class="the-header">
-      <a href="/todo">Create a new task</a> | <a href="/todo/list">List tasks</a> | <a href="/">Logout</a>
+      <a href="/todo">Add Item</a> | <a href="/todo/list">Shopping List</a> | <a href="/">Logout</a>
     </div>
 
+    <div class="welcome-profile">
+      <div>
+          <b>Username:</b> <%= username %>
+        </div>
+        <div>
+          <b>Number of tasks:</b> <%= tasks.length %>
+        </div>
+    </div>
 
-    <div>
-      <b>Username:</b> <%= username %>
-    </div>
-    <div>
-      <b>Number of tasks:</b> <%= tasks.length %>
-    </div>
   </body>
 </html>

@@ -9,14 +9,46 @@ body {
 .body-background-img {
   color: #000;
   text-align: left;
-  padding: 18% 24%;
-  /*border-top: 10px solid #ffa949;*/
+  padding: 2% 24%;
   margin: 30px 0 60px;
-  background: #434a52 url('/images/repeating-horizontal.png') center;
-  /*background-size: cover;*/
+  background: #434a52 url('/images/Groceries-Banner.jpg') center;
   background-repeat: repeat;
   background-size: 100% 100%;
   background-position: right top;
+}
+
+.body-background-img-todolist {
+  color: #000;
+  text-align: left;
+  padding: 18% 24%;
+  margin: 30px 0 60px;
+  background: #434a52 url('/images/Groceries-Banner-Large.jpg') center;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+}
+
+.body-background-img-additem {
+  color: #000;
+  text-align: left;
+  padding: 2% 24%;
+  margin: 30px 0 60px;
+  background: #434a52 url('/images/Groceries-Banner-Large.jpg') center;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+}
+
+.body-background-img-userprofile {
+  color: #000;
+  text-align: left;
+  margin: 30px 0 60px;
+  background: #434a52 url('/images/Groceries-Banner-Large.jpg') center;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+  padding-top: 31%;
+  padding-bottom: 31%;
 }
 
 a {
@@ -68,6 +100,32 @@ input + label.error {
 
 .deleteButton, .submitButton, .editButton {
   margin: 0 10px 0 0;
+}
+
+.please-login {
+  text-align: center;
+  background-color: #fff;
+  padding: 2px;
+  margin: 0 0 0 10px;
+  border-radius: 4px;
+}
+
+.welcome-login {
+  text-align: center;
+}
+
+.welcome-register {
+  text-align: center;
+}
+
+.welcome-profile {
+  font-size: 2em;
+  text-align: center;
+}
+
+.we-shop {
+  font-size: 3.5em;
+  font-family: "Reenie Beanie";
 }
 
 

@@ -53,11 +53,7 @@ select {
 input[type="radio"], input[type="checkbox"] {
     margin: 0 4px 8px 0;
 }
-/*select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-}*/
+
 .submitButton {
     padding: 19px 39px 18px 39px;
     color: #FFF;
@@ -97,25 +93,14 @@ label.error {
   background-color: transparent;
   color: #FF0000;
   border-color: #FF0000;
-  /* margin-top: -21px; */
-  /* margin-bottom: 0px; */
   font-size: 0.8em;
   margin-right: 4px;
-  /* line-height: 30px; */
   text-align: center;
 }
 
 .register {
   text-align: center;
 }
-
-
-/*.todo-item {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 3em;
-  color: #8a97a0;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.03) inset;
-}*/
 
 
 

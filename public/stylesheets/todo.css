@@ -9,18 +9,14 @@
   margin-bottom: 10px;
   font-family: 'Inconsolata', arial;
   padding: 5px 10px 10px 10px;
-  /*background-color: #006666;*/
   border-radius: 5px;
   width: 95%;
-  /*height: 10%;*/
   border: 2px solid #e8eeef;
-  /*border-width: 1px 1px 3px;*/
-  /*box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
 
 .todo-item {
   max-width: 450px;
-  /*background: #f4f7f8;*/
+  background: #f4f7f8;
   text-align: left;
   font-size: 1em;
   margin-top: 10px;
@@ -29,13 +25,9 @@
   margin-bottom: 10px;
   font-family: 'Inconsolata', arial;
   padding: 5px 10px 10px 10px;
-  /*background-color: #006666;*/
   border-radius: 5px;
   width: 95%;
-  /*height: 10%;*/
   border: 2px solid #e8eeef;
-  /*border-width: 1px 1px 3px;*/
-  /*box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
 
 a {
@@ -149,7 +141,8 @@ a {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
 }
 
-/*.actions {
-  margin-top: -50px;
-  float: right;
-}*/
+.main-header {
+  background-color: #fff;
+}
+
+

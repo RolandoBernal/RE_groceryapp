@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Task list</title>
+    <title>Budget Grocery App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
@@ -10,13 +10,14 @@
     <link rel='stylesheet' href='/stylesheets/todo.css' />
   </head>
   <body class="body-background-img">
-    <div>
-      <h1>Welcome to your task journal</h1>
-    </div>
+    <div class="welcome-login">
+      <h1>Welcome to your Budget Grocery List</h1><br>
+      <h3 class="we-shop">We shop for what is on your list and in your <b>budget</b></h3>
+    </div><br><br>
 
-    <div>
-      <h4>Please log in below or  <a href="/user/register">register</a> for a new account</h4>
-    </div>
+    <div class="please-login">
+      <h5>Please log in below or  <a href="/user/register">register</a> for a new account</h5>
+    </div><br>
 
 
     <form method="POST" action="/user/login" id="loginForm">

@@ -37,11 +37,11 @@ var sendTodoList = function (req, res, next) {
 
     if (err) {
       console.log(err);
-      sendError(req, res, err, "Could not get task list");
+      sendError(req, res, err, "Could not get shopping list");
     } else {
       res.render("todoList", {
-        title: "List of tasks",
-        message: "Things you still need to do",
+        title: "List of Items",
+        message: "My Shopping List",
         tasks: tasks,
         user: theUser.username
       });
@@ -72,12 +72,12 @@ router.get('/:id', function (req, res) {
 
     // Was there an error when retrieving?
     if (err) {
-      sendError(req, res, err, "Could not find a task with that id");
+      sendError(req, res, err, "Could not find an item with that id");
 
     // Find was successful
     } else {
       res.render('todo', {
-        title : 'Express Todo Example',
+        title : 'Grocery Shpping List',
         todo: thisItem
       });
     }
@@ -97,7 +97,7 @@ router.get('/', function (req, res) {
   // This is the code changed for the new schema   *
   // ***********************************************
   res.render('todo', {
-    title : 'Express Todo Example',
+    title : 'Grocery Shopping List',
     todo: {
       item: '',
       quantity: 1,
@@ -114,7 +114,7 @@ router.delete('/', function (req, res) {
 
     // Was there an error when removing?
     if (err) {
-      sendError(req, res, err, "Could not delete the task");
+      sendError(req, res, err, "Could not delete the item");
 
     // Delete was successful
     } else {
@@ -144,7 +144,7 @@ router.post('/', function (req, res, next) {
         // Save the updated item.
         foundTodo.save(function (err, newOne) {  // this is how you save records to the db: save
           if (err) {
-            sendError(req, res, err, "Could not save task with updated information");
+            sendError(req, res, err, "Could not save item with updated information");
           } else {
             res.redirect('/todo/list');
           }
@@ -169,7 +169,7 @@ router.post('/', function (req, res, next) {
 
     mytodo.save(function (err, todo) {
       if (err) {
-        sendError(req, res, err, "Failed to save task");
+        sendError(req, res, err, "Failed to save item");
       } else {
         res.redirect('/todo/list');
       }

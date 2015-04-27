@@ -9,20 +9,21 @@
     <link rel='stylesheet' href='/stylesheets/style-jrb.css' />
     <link rel='stylesheet' href='/stylesheets/todo.css' />
   </head>
-  <body class="body-background-img">
-  <!-- <body background="/images/notebookpaper.jpg"> -->
+  <body class="body-background-img-todolist">
 
-    <div class="welcome-user">
-      Welcome <b><%= user %></b>!
-    </div>
-    <div class="the-header">
-      <a href="/todo">Create a new task</a> | <a href="/user/profile">View profile</a> | <a href="/">Logout</a>
-    </div>
 
-    <div class="the-message">
-      <h1><%= message %></h1>
-    </div>
+    <div class="main-header">
+        <div class="welcome-user">
+          Welcome <b><%= user %></b>!
+        </div>
+        <div class="the-header">
+          <a href="/todo">Add Item</a> | <a href="/user/profile">View profile</a> | <a href="/">Logout</a>
+        </div>
 
+        <div class="the-message">
+          <h1><%= message %></h1>
+        </div>
+    </div>
 
     <% for (var t = 0; t < tasks.length; t++) { %>
       <table class="table">
@@ -31,6 +32,8 @@
             <th>Item</th>
             <th>Quantity</th>
             <th>Price</th>
+            <th>Found</th>
+            <th>Delete</th>
             <th>Edit</th>
             <th>Found</th>
           </tr>
@@ -39,16 +42,20 @@
           <% var currentTask = tasks[t]; %>
           <tr class="todo-item" id="todo_<%= currentTask._id %>">
             <td>
-              <%= currentTask.title %>
+              <%= currentTask.item %>
             </td>
             <td>
-              <%= currentTask.priority %>
+              <%= currentTask.quantity %>
+            </td>
+            <td>$
+              <%= currentTask.price %>
             </td>
             <td>
-              <%= currentTask.priority %>
+              <%= currentTask.found %>
             </td>
             <td>
-              <a class="deleteButton" id="<%= currentTask._id %>">Delete</a>
+              <a class="deleteButton" id="<%= currentTask._id %>">Delete</a></td>
+            <td>
               <a class="editButton" id="<%= currentTask._id %>">Edit</a>
             </td>
             <td>

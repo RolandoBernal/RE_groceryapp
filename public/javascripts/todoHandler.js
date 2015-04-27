@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {  // jQuery Starts
 
   // User clicked on an edit button
   $(".editButton").click(function () {
@@ -23,4 +23,4 @@ $(document).ready(function() {
 
 
 
-});
+}); // jQuery Ends
