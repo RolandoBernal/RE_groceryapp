@@ -24,8 +24,6 @@
           <h1><%= message %></h1>
         </div>
     </div>
-
-    <% for (var t = 0; t < tasks.length; t++) { %>
       <table class="table">
         <thead>
           <tr>
@@ -39,6 +37,7 @@
           </tr>
         </thead>
         <tbody>
+          <% for (var t = 0; t < tasks.length; t++) { %>
           <% var currentTask = tasks[t]; %>
           <tr class="todo-item" id="todo_<%= currentTask._id %>">
             <td>
