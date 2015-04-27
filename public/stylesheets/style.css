@@ -106,7 +106,7 @@ input + label.error {
   text-align: center;
   background-color: #fff;
   padding: 2px;
-  margin: 0 0 0 10px;
+  margin: 0 20px 0 20px;
   border-radius: 4px;
 }
 
