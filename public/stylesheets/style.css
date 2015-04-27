@@ -81,7 +81,6 @@ a {
   margin: 5px 0;
 }
 
-
 input + label.error {
   background-color: #A7383E;
   color: #FFE5E7;
@@ -91,8 +90,6 @@ input + label.error {
   border: 1px dotted red;
   border-radius: 4px;
 }
-
-
 
 .actions {
   padding: 10px 0 0 0;
