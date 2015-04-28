@@ -6,6 +6,21 @@ body {
   font-family: 'Special Elite', cursive;
 }
 
+html {
+     background-image: url('/images/grocery-shopping.jpg');
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+ }
+
+p{
+  text-align: center;
+}
+ .body {
+     background-color: transparent;
+     opacity: 0.95;
+     margin: 30px 0 60px;
+ }
+
 .body-background-img {
   color: #000;
   text-align: left;
@@ -78,7 +93,7 @@ a {
 }
 
 .formfield {
-  margin: 5px 0;
+  margin: 20px 0;
 }
 
 input + label.error {
@@ -124,5 +139,3 @@ input + label.error {
   font-size: 3.5em;
   font-family: "Reenie Beanie";
 }
-
-
