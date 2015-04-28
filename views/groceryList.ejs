@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style-jrb.css' />
+    <link rel='stylesheet' href='/stylesheets/todo.css' />
+  </head>
+  <body class="body-background-img-todolist">
+
+
+    <div class="main-header">
+        <div class="welcome-user">
+          Welcome <b><%= user %></b>!
+        </div>
+        <div class="the-header">
+          <a href="/grocery">Add Item</a> | <a href="/user/profile">View profile</a> | <a href="/">Logout</a>
+        </div>
+
+        <div class="the-message">
+          <h1><%= message %></h1>
+        </div>
+    </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Found</th>
+            <th>Delete</th>
+            <th>Edit</th>
+            <th>Found</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (var g = 0; g < groceries.length; g++) { %>
+          <% var currentItem = groceries[g]; %>
+          <tr class="todo-item" id="grocery_<%= currentItem._id %>">
+            <td>
+              <%= currentItem.item %>
+            </td>
+            <td>
+              <%= currentItem.quantity %>
+            </td>
+            <td>$
+              <%= currentItem.price %>
+            </td>
+            <td>
+              <%= currentItem.found %>
+            </td>
+            <td>
+              <a class="deleteButton" id="<%= currentItem._id %>">Delete</a>
+            </td>
+            <td>
+              <a class="editButton" id="<%= currentItem._id %>">Edit</a>
+            </td>
+            <td>
+              <a class="completeButton" id="<%= currentItem._id %>">Found</a>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/javascripts/groceryHandler.js"></script>
+
+  </body>
+</html>

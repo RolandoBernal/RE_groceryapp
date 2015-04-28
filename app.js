@@ -33,8 +33,8 @@ app.use('/', root_routes);
 
 
 // Set up route handlers for /todo URL
-var todo = require('./routes/todo');
-app.use('/todo', todo);
+var grocery = require('./routes/grocery');
+app.use('/grocery', grocery);
 
 
 // Set up route handlers for /user URL
