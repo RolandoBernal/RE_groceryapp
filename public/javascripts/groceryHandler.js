@@ -8,7 +8,7 @@ $(document).ready(function() {  // jQuery Starts
   // User clicked on a delete button
   $(".deleteButton").click(function () {
     var groceryItemId = $(this)[0].id;
-
+    console.log("groceryItemId: ",groceryItemId);
     $.ajax({
       url: "/grocery",
       method: "DELETE",
@@ -16,6 +16,7 @@ $(document).ready(function() {  // jQuery Starts
         grocery_id: groceryItemId
       },
       success: function (response) {
+        console.log("groceryItemId: ",groceryItemId);
         $("#grocery_"+groceryItemId).remove();  // Remove the DOM element on success
       }
     });

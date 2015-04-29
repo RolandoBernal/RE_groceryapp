@@ -16,7 +16,7 @@
 
 .todo-item {
   max-width: 450px;
-  background: #f4f7f8;
+  background: #fff; /* #f4f7f8 */
   text-align: left;
   font-size: 1em;
   margin-top: 10px;
@@ -39,106 +39,55 @@ a {
 }
 
 
-.greeting {
-  text-align: center;
-  font-size: 1em;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  height: auto;
-  outline: 0;
-  padding: 10px;
-  width: 95%;
-  background-color: #e8eeef;
-  color: #006666;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  border-radius: 10px;
-}
-
-
-
-.itemsBorder {
-	background: rgba(255, 255, 255, 0.1);
-  border: none;
-  height: auto;
-  outline: 0;
-  padding: 5px;
-  width: 95%;
-  background-color: #8a97a0;
-  color: #384047;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-#todoDescription {
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    margin-bottom: 30px;
-}
-
-/*.editButton {
-  padding: 5px 10px 10px 10px;
-  color: #333;
-  background-color: #e8eeef;
+.editButton {
+  /*padding: 5px 10px 10px 10px;*/
+  color: #0066FF;
+  /*background-color: #e8eeef;*/
   font-size: 1em;
   text-align: center;
   font-style: normal;
-  border-radius: 5px;
+  font-family: 'Inconsolata', arial;
+  /*border-radius: 5px;
   width: 40%;
   height: 5%;
-  border: 1px solid #384047; 
+  border: 1px solid #384047;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-top: 1px;
-  margin-bottom: 1px;
-}*/
+  margin-bottom: 1px;*/
+}
 
 .deleteButton {
-  padding: 5px 10px 10px 10px;
-  color: #e8eeef;
-  background-color: #900000; /* #4bc970; */
+  /*padding: 5px 10px 10px 10px;*/
+  color: #900000;
+  /*background-color: #900000;*/
   font-size: 1em;
   text-align: center;
   font-style: normal;
-  border-radius: 5px;
+  font-family: 'Inconsolata', arial;
+  /*border-radius: 5px;
   width: 30%;
   height: 10%;
-  border: 1px solid #384047; /* #3ac162; */
+  border: 1px solid #384047;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-top: 1px;
-  margin-bottom: 1px;
+  margin-bottom: 1px;*/
 }
 
 .completeButton {
   text-align: center;
   font-size: 1em;
   font-family: 'Inconsolata', arial;
-  padding: 5px 10px 10px 10px;
-  color: #e8eeef;
-  background-color: #006666;
-  border-radius: 5px;
+  /*padding: 5px 10px 10px 10px;*/
+  color: #006666;
+  /*background-color: #006666;*/
+  /*border-radius: 5px;
   width: 30%;
   height: 10%;
-  border: 1px solid #384047; /* #3ac162; */
+  border: 1px solid #384047;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
 
 .main-header {

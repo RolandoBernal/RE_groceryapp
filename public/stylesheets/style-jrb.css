@@ -45,7 +45,7 @@ select {
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color: #e8eeef;
+    background-color: #e8eeef; /* #e8eeef; */
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
@@ -54,21 +54,26 @@ input[type="radio"], input[type="checkbox"] {
     margin: 0 4px 8px 0;
 }
 
+
 .submitButton {
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #006666; /* #4bc970; */
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid #006600; /* #3ac162; */
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    margin-top: 30px;
-    margin-bottom: 10px;
+  padding: 19px 39px 18px 39px;
+  color: #e8eeef;
+  background-color: #900000;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.5em;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #384047;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
+
+
+
+
 fieldset {
     margin-bottom: 30px;
     border: none;
@@ -102,6 +107,11 @@ label.error {
   text-align: center;
 }
 
+.login-form {
+  color: #000;
+  background-color: #fff;
+  opacity: 0.7;
+}
 
 
 @media screen and (min-width: 480px) {

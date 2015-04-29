@@ -13,7 +13,7 @@ console.log('* * * * * VALIDATING * * * * *');
 		$( "#todoForm" ).validate({
 		  rules: {
 		    quantity: {
-		      required: true,
+		      required: true
 		    },
 		    item: {
 		    	required: true,
@@ -22,6 +22,7 @@ console.log('* * * * * VALIDATING * * * * *');
 		    },
 		    price: {
 		      required: true
+		    }
 		  }
 		});
 

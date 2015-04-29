@@ -22,10 +22,10 @@
   		</div>
   		<div class="navbar-collapse collapse" id="navbar">
   		  <ul class="nav navbar-nav">
-    			<li><a href="">Login</a></li>
-    			<li><a href="">Add Item</a></li>
-    			<li><a href="">View Profile</a></li>
-    			<li><a href="">Logout</a></li>
+    			<!-- <li><a href="">Login</a></li> -->
+    			<li><a href="/grocery">Add Item</a></li>
+    			<li><a href="/user/profile">View Profile</a></li>
+    			<li><a href="/">Logout</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/user/register">Register</a></li>
@@ -49,18 +49,18 @@
 
       <div class="formfield">
         <div class="formfield--prompt">Item:</div>
-        <input type="text" id="todoTitle" name="item" value="<%= grocery.item %>">
+        <input type="text" id="todoTitle" name="item" value="<%= grocery.item %>" required>
       </div>
       <div class="formfield">
         <div class="formfield--prompt">Quantity:</div>
-        <input type="text" id="todoPriority" name="quantity" value="<%= grocery.quantity %>">
+        <input type="text" id="todoQuantity" name="quantity" value="<%= grocery.quantity %>" required>
       </div>
       <div class="formfield">
         <div class="formfield--prompt">Price:</div>
-        <input type="text" id="todoPriority" name="price" value="<%= grocery.price %>">
+        <input type="text" id="todoPrice" name="price" value="<%= grocery.price %>" required>
       </div>
 
-      <input class="submitButton" type="submit"></input>
+      <input class="submitButton" type="submit" value="Add Item"></input>
     </form>
 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>

@@ -61,9 +61,6 @@ input + label.error {
   padding: 10px 0 0 0;
 }
 
-.deleteButton, .submitButton, .editButton {
-  margin: 0 10px 0 0;
-}
 
 .please-login {
   text-align: center;
