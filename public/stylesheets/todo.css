@@ -92,22 +92,22 @@ a {
     margin-bottom: 30px;
 }
 
-.editButton {
+/*.editButton {
   padding: 5px 10px 10px 10px;
   color: #333;
-  background-color: #e8eeef; /* #4bc970; */
+  background-color: #e8eeef;
   font-size: 1em;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 40%;
   height: 5%;
-  border: 1px solid #384047; /* #3ac162; */
+  border: 1px solid #384047; 
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-top: 1px;
   margin-bottom: 1px;
-}
+}*/
 
 .deleteButton {
   padding: 5px 10px 10px 10px;
@@ -144,5 +144,3 @@ a {
 .main-header {
   background-color: #fff;
 }
-
-

@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.Router();
 var UserController = require("../userController");
 var UserModel = require("../models/user");
-var Todo = require("../models/todo");
+var Grocery = require("../models/grocery");
 
 // Send the error message back to the client
 var sendError = function (req, res, err, message) {
@@ -18,18 +18,18 @@ var sendError = function (req, res, err, message) {
 };
 
 // Retrieve all tasks for the current user
-var getUserTasks = function (userId) {
+var getUserGroceries = function (userId) {
   var deferred = Q.defer();
 
   console.log('Another promise to let the calling function know when the database lookup is complete');
 
-  Todo.find({user: userId}, function (err, tasks) {
+  Grocery.find({user: userId}, function (err, groceries) {
     if (!err) {
-      console.log('Tasks found = ' + tasks.length);
-      console.log('No errors when looking up tasks. Resolve the promise (even if none were found).');
-      deferred.resolve(tasks);
+      console.log('Groceries found = ' + groceries.length);
+      console.log('No errors when looking up groceries. Resolve the promise (even if none were found).');
+      deferred.resolve(groceries);
     } else {
-      console.log('There was an error looking up tasks. Reject the promise.');
+      console.log('There was an error looking up groceries. Reject the promise.');
       deferred.reject(err);
     }
   })
@@ -52,7 +52,7 @@ app.post("/register", function (req, res) {
     if (err) {
       sendError(req, res, err, "Failed to register user");
     } else {
-      res.redirect("/todo");
+      res.redirect("/grocery");
     }
   });
 });
@@ -75,10 +75,10 @@ app.post("/login", function (req, res) {
       console.log('Find any tasks that are assigned to the user');
 
       // Now find the tasks that belong to the user
-      getUserTasks(validUser._id)
-        .then(function (tasks) {
+      getUserGroceries(validUser._id)
+        .then(function (groceries) {
           // Render the todo list
-          res.redirect("/todo/list");
+          res.redirect("/grocery/list");
         })
         .fail(function (err) {
           sendError(req, res, {errors: err.message}, "Failed")
@@ -96,10 +96,10 @@ app.get("/profile", function (req, res) {
   var user = UserController.getCurrentUser();
 
   if (user !== null) {
-    getUserTasks(user._id).then(function (tasks) {
+    getUserGroceries(user._id).then(function (groceries) {
       res.render("userProfile", {
         username: user.username,
-        tasks: tasks
+        groceries: groceries
       });
     });
   } else {
