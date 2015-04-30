@@ -49,7 +49,7 @@ var sendGroceryList = function (req, res, next) {
   });
 };
 
-// Handle a GET request from the client to /todo/list
+// Handle a GET request from the client to /grocery/list
 router.get('/list', function (req,res,next) {
   // Is the user logged in?
   if (UserController.getCurrentUser() === null) {
