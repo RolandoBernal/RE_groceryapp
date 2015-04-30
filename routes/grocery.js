@@ -107,11 +107,11 @@ router.get('/', function (req, res) {
   });
 });
 
-// Handle a DELETE request from the client to /todo
+// Handle a DELETE request from the client to /grocery
 router.delete('/', function (req, res) {
+console.log(req.body.grocery_id);
   Grocery.find({ _id: req.body.grocery_id })
       .remove(function (err) { // this is how you delete records from the db: .remove
-
     // Was there an error when removing?
     if (err) {
       sendError(req, res, err, "Could not delete the item");
