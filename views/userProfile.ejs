@@ -12,40 +12,71 @@
   <body class="body">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-      <div class="navbar-header">
-        <a href="" disabled="true" class="navbar-brand">RE Grocery List | <%= username %>'s Profile</a>
-        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </a>
+          <div class="navbar-header">
+            <a href="" disabled="true" class="navbar-brand">RE Grocery List | <%= username %>'s Profile</a>
+            <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li><a href="/grocery">Add Item</a></li>
+              <li><a href="/grocery/list">Shopping List</a></li>
+              <!-- <li><a href="/user/profile">View Profile</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Log Out</a></li>
+            </ul>
+          </div>
       </div>
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li><a href="/grocery">Add Item</a></li>
-          <li><a href="/grocery/list">Shopping List</a></li>
-          <!-- <li><a href="/user/profile">View Profile</a></li> -->
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Log Out</a></li>
-        </ul>
-      </div>
-       </div>
     </nav>
     <div class="col-lg-12">
       <p> <br><br> </p>
     </div>
     <div class="welcome-profile">
-      <div>
-          <b>Username:</b> <%= username %>
-        </div>
-        <div>
-          <b>Number of items in the list:</b> <%= groceries.length %>
-        </div>
-    </div>
+        <form id="todoForm">
+
+          <div>
+              <b>Welcome </b> <%= username %> <b>to your Grocery Calculator App!</b>
+            </div><br>
+            <div>
+              <b>You have </b> <%= groceries.length %> <b>items in the list.</b>
+            </div><br>
+            <div class="formfield">
+              <div class="formfield--prompt">Your budget is: $100.00</div>
+              <!-- <input type="text" id="todoBudget" name="budget" value="$ 100.00" required> -->
+            </div><br>
+
+          <button class="showListButton btn" type="button">Go to Shopping List</button>
+        </form>
 
     <!-- script references -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
+<!--
+
+    <div>
+      <h1>Add Item</h1>
+    </div>
+
+
+    <form method="POST" action="/grocery" id="todoForm">
+
+      <div>
+          <b>Welcome </b> <%= username %> <b>to your Grocery Calculator App!</b>
+        </div>
+        <div>
+          <b>You have </b> <%= groceries.length %> <b>in the list.</b>
+        </div>
+
+
+      <input class="submitButton" type="submit" value="Go to Shopping List"></input>
+    </form>
+
+ -->
