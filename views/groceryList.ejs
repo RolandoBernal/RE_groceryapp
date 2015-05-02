@@ -49,9 +49,9 @@
               <th>Item</th>
               <th>Quantity</th>
               <th>Price</th>
-              <th>Delete</th>
               <th>Edit</th>
-              <th>Found</th>
+              <th>Remove Item</th>
+              <th>Added to Cart</th>
             </tr>
           </thead>
           <tbody>
@@ -68,13 +68,13 @@
                 <%= currentItem.price %>
               </td>
               <td>
-                <a class="deleteButton" id="<%= currentItem._id %>">Delete</a>
+                <button class="editButton btn btn-link" id="<%= currentItem._id %>">Edit</a>
               </td>
               <td>
-                <a class="editButton" id="<%= currentItem._id %>">Edit</a>
+                <button class="deleteButton btn" id="<%= currentItem._id %>">Remove</button>
               </td>
               <td>
-                <a class="completeButton" id="<%= currentItem._id %>">Found</a>
+                <input class="completeButton checkbox" id="<%= currentItem._id %>" type="checkbox"></input>
               </td>
             </tr>
             <% } %>
