@@ -58,13 +58,13 @@
             <% for (var g = 0; g < groceries.length; g++) { %>
             <% var currentItem = groceries[g]; %>
             <tr class="todo-item" id="grocery_<%= currentItem._id %>">
-              <td>
+              <td contenteditable/>
                 <%= currentItem.item %>
               </td>
-              <td>
+              <td contenteditable/>
                 <%= currentItem.quantity %>
               </td>
-              <td>$
+              <td contenteditable/>$
                 <%= currentItem.price %>
               </td>
               <td>
@@ -74,7 +74,7 @@
                 <button class="deleteButton btn" id="<%= currentItem._id %>">Remove</button>
               </td>
               <td>
-                <input class="completeButton checkbox" id="<%= currentItem._id %>" type="checkbox"></input>
+                <input name="strike" value="" class="strike_button completeButton checkbox" id="<%= currentItem._id %>" type="checkbox" ></input>
               </td>
             </tr>
             <% } %>
@@ -89,5 +89,6 @@
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="../javascripts/groceryHandler.js"></script>
+    <script src="../javascripts/strike.js"></script>
     </body>
 </html>
