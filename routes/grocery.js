@@ -148,6 +148,7 @@ router.post('/', function (req, res, next) {
             sendError(req, res, err, "Could not save item with updated information");
           } else {
             res.redirect('/grocery/list');
+            // res.redirect('/user/profile');
           }
         });
       }
