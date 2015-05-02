@@ -102,7 +102,8 @@ router.get('/', function (req, res) {
     grocery: {
       item: '',
       quantity: 1,
-      price: 10,
+      price: 0,
+      cost: 0,
       found: false
     }
   });
@@ -140,6 +141,7 @@ router.post('/', function (req, res, next) {
         foundGrocery.item = req.body.item;
         foundGrocery.quantity = req.body.quantity;
         foundGrocery.price = req.body.price;
+        foundGrocery.cost = (req.body.price * req.body.quantity);
         foundGrocery.found = (req.body.found) ? req.body.found : false;
 
         // Save the updated item.
