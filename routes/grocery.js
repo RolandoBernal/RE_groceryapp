@@ -21,10 +21,10 @@ var sendError = function (req, res, err, message) {
 var sendGroceryList = function (req, res, next) {
 
   var theUser = UserController.getCurrentUser();
-  //console.log(user.username);
+  console.log("theUser: ",theUser);
 
-  Grocery.find({}, function (err, groceries) {
-
+  Grocery.find({user: theUser._id}, function (err, groceries) {
+    console.log("groceries",groceries);
     // Swap out the user._id for the user.username
 
     // For loop over the tasks array
@@ -68,6 +68,7 @@ router.get('/:id', function (req, res) {
   }
 
   Grocery.find({ _id: req.params.id }, function (err, item) {
+    console.log("item: ",item);
     var thisItem = item[0];
 
     // Was there an error when retrieving?
@@ -84,7 +85,7 @@ router.get('/:id', function (req, res) {
   });
 });
 
-// Handle a GET request from the client to /todo
+// Handle a GET request from the client to /grocery
 router.get('/', function (req, res) {
 
   // Is the user logged in?
