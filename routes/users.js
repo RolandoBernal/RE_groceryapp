@@ -17,7 +17,7 @@ var sendError = function (req, res, err, message) {
   });
 };
 
-// Retrieve all tasks for the current user
+// Retrieve all groceries for the current user
 var getUserGroceries = function (userId) {
   var deferred = Q.defer();
 
@@ -57,6 +57,18 @@ app.post("/register", function (req, res) {
   });
 });
 
+// app.post("/register", function (req, res) {
+//   var newUser = new UserModel(req.body);
+
+//   newUser.save(function (err, user) {
+//     if (err) {
+//       sendError(req, res, err, "Failed to register user");
+//     } else {
+//       res.redirect("/grocery");
+//     }
+//   });
+// });
+
 
 // Handle the login action
 app.post("/login", function (req, res) {
@@ -78,7 +90,7 @@ app.post("/login", function (req, res) {
       getUserGroceries(validUser._id)
         .then(function (groceries) {
           // Render the todo list
-          res.redirect("/grocery/list");
+          res.redirect("/user/profile");
         })
         .fail(function (err) {
           sendError(req, res, {errors: err.message}, "Failed")

@@ -27,7 +27,7 @@ var sendGroceryList = function (req, res, next) {
     console.log("groceries",groceries);
     // Swap out the user._id for the user.username
 
-    // For loop over the tasks array
+    // For loop over the groceries array
     for (var i = 0; i < groceries.length; i++) {
       groceries[i].user = theUser.username; // this is how you change the user_id for the username
     };
@@ -93,7 +93,7 @@ router.get('/', function (req, res) {
     res.redirect("/");
   }
 
-  // Send the todo form back to the client
+  // Send the grocery form back to the client
   // ***********************************************
   // This is the code changed for the new schema   *
   // ***********************************************
@@ -125,7 +125,7 @@ console.log(req.body.grocery_id);
   });
 });
 
-// Handle a POST request from the client to /todo
+// Handle a POST request from the client to /grocery
 router.post('/', function (req, res, next) {
 
   // User is editing an existing item
