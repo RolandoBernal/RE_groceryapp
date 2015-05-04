@@ -11,7 +11,6 @@ table {
 }
 
 td {
-    position: relative;
     padding: 5px 10px;
 }
 
@@ -103,5 +102,5 @@ input + label.error {
   background-color: white;
   opacity: 0.99;
   border-radius: 25px;
-  padding: 20px;
+
 }
