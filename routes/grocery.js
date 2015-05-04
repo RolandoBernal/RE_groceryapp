@@ -170,7 +170,7 @@ router.post('/', function (req, res, next) {
 
 
     var myGrocery = new Grocery(theFormPostData);
-
+    myGrocery.cost = (myGrocery.price * myGrocery.quantity).toFixed(2);
     myGrocery.save(function (err, grocery) {
       if (err) {
         sendError(req, res, err, "Failed to save item");
