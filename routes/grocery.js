@@ -43,7 +43,8 @@ var sendGroceryList = function (req, res, next) {
         title: "List of Items",
         message: "My Shopping List",
         groceries: groceries,
-        user: theUser.username
+        user: theUser.username,
+        budget: theUser.budget
       });
     }
   });
