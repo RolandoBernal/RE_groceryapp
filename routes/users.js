@@ -111,7 +111,8 @@ app.get("/profile", function (req, res) {
     getUserGroceries(user._id).then(function (groceries) {
       res.render("userProfile", {
         username: user.username,
-        groceries: groceries
+        groceries: groceries,
+        budget: user.budget
       });
     });
   } else {
