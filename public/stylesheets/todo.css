@@ -40,54 +40,26 @@ a {
 
 
 .editButton {
-  /*padding: 5px 10px 10px 10px;*/
   color: #0066FF;
-  /*background-color: #e8eeef;*/
   font-size: 1em;
   text-align: center;
   font-style: normal;
   font-family: 'Inconsolata', arial;
-  /*border-radius: 5px;
-  width: 40%;
-  height: 5%;
-  border: 1px solid #384047;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-  margin-top: 1px;
-  margin-bottom: 1px;*/
 }
 
 .deleteButton {
-  /*padding: 5px 10px 10px 10px;*/
   color: #900000;
-  /*background-color: #900000;*/
   font-size: 1em;
   text-align: center;
   font-style: normal;
   font-family: 'Inconsolata', arial;
-  /*border-radius: 5px;
-  width: 30%;
-  height: 10%;
-  border: 1px solid #384047;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-  margin-top: 1px;
-  margin-bottom: 1px;*/
 }
 
 .completeButton {
   text-align: center;
   font-size: 1em;
   font-family: 'Inconsolata', arial;
-  /*padding: 5px 10px 10px 10px;*/
   color: #006666;
-  /*background-color: #006666;*/
-  /*border-radius: 5px;
-  width: 30%;
-  height: 10%;
-  border: 1px solid #384047;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
 
 .main-header {
