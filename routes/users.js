@@ -52,7 +52,7 @@ app.post("/register", function (req, res) {
     if (err) {
       sendError(req, res, err, "Failed to register user");
     } else {
-      res.redirect("/grocery");
+      res.redirect("/user/profile");
     }
   });
 });
