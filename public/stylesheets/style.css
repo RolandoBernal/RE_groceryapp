@@ -34,8 +34,8 @@ p{
 }
 
 .body {
-    background: url("/images/Groceries-Banner-Medium.jpg");
-    background-color: #1D3C6A; /* #8a97a0; */
+    background: url("/images/Groceries-Banner-Desktop.jpg");
+    background-color: #1D3C6A;
     margin: 30px 0 60px;
  }
 
@@ -113,5 +113,8 @@ input + label.error {
   background-color: white;
   opacity: 0.99;
   border-radius: 25px;
+}
 
+#loginForm {
+  background-color: rgba(54, 25, 25, .085);
 }

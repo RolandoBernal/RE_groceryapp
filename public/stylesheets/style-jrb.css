@@ -168,4 +168,15 @@ label.error {
     form {
         max-width: 480px;
     }
+    .body {
+      background: url("/images/Groceries-Banner-iPad.jpg");
+      background-color: #1D3C6A;
+      margin: 30px 0 60px;
+    }
+}
+
+.body {
+  background: url("/images/Groceries-Banner-Desktop.jpg");
+  background-color: #1D3C6A;
+  margin: 30px 0 60px;
 }
