@@ -5,6 +5,8 @@ $(document).ready(function() {  // jQuery Starts
     window.location.href = "/grocery/" + $(this)[0].id;
   });
 
+
+
   // User clicked on a delete button
   $(".deleteButton").click(function () {
     var groceryItemId = $(this)[0].id;

@@ -41,7 +41,9 @@ app.use('/grocery', grocery);
 var users = require('./routes/users');
 app.use('/user', users);
 
-
+// Set up route handlers for /budget URL
+var budgets = require('./routes/budget');
+app.use('/budget', budgets);
 
 
 // catch 404 and forward to error handler

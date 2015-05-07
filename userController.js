@@ -43,6 +43,10 @@ User.prototype.logout = function (username, password) {
   this.currentUser = null;
 };
 
+User.prototype.budgetUpdate = function (budget) {
+  this.currentUser.budget = budget;
+};
+
 User.prototype.getCurrentUser = function () {
   return this.currentUser;
 };
