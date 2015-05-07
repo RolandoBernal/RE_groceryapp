@@ -62,7 +62,8 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .submitButton,
-.registerButton {
+.registerButton,
+.addBudgetButton {
   padding: 19px 39px 18px 39px;
   color: #e8eeef;
   background-color: #1D3C6A; /* #900000; */

@@ -57,17 +57,6 @@ app.post("/register", function (req, res) {
   });
 });
 
-// app.post("/register", function (req, res) {
-//   var newUser = new UserModel(req.body);
-
-//   newUser.save(function (err, user) {
-//     if (err) {
-//       sendError(req, res, err, "Failed to register user");
-//     } else {
-//       res.redirect("/grocery");
-//     }
-//   });
-// });
 
 
 // Handle the login action
