@@ -6,16 +6,26 @@ body {
   font-family: 'Special Elite', cursive;
 }
 
-table {
-    border-collapse: collapse;
+.left{
+  text-align: left;
 }
 
-td {
-    padding: 5px 10px;
+.right{
+  text-align: right;
+  alight: right;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 
-tr.strikeout {
+.nopadding{
+  margin: 0px;
+  padding: 0px;
+}
+
+div.strikeout {
 opacity: 0.3;
 }
 
