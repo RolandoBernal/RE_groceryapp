@@ -16,8 +16,8 @@ body {
 }
 
 .listitem{
-  background-color: lightgray;
-  opacity: .95;
+  background-color: rgba(232, 230, 230, .8);
+  border-radius: 25px;
 }
 .underline{
   text-decoration: underline;
@@ -43,11 +43,11 @@ p{
     margin: 30px 0 60px;
  }
 
-a {
+/*a {
   color: #00B7FF;
   text-decoration: underline;
   cursor: pointer;
-}
+}*/
 
 .the-header {
   float: left;
@@ -122,4 +122,13 @@ input + label.error {
 #loginForm,
 #groceryForm {
   background-color: rgba(54, 25, 25, .085);
+  border-radius: 25px;
+}
+
+hr{
+  color: black;
+  background-color: black;
+  opacity: .6;
+
+height: 2px;
 }
