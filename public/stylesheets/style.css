@@ -15,8 +15,9 @@ body {
   align: right;
 }
 
-.center{
-align: center;
+.listitem{
+  background-color: lightgray;
+  opacity: .95;
 }
 .underline{
   text-decoration: underline;

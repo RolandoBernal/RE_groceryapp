@@ -40,7 +40,7 @@
     </div>
     <div class="container">
       <div class="thelist">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
         Budget:
         </div>
@@ -48,7 +48,7 @@
           $<%= budget %><br><br>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
           Total Cost:
         </div>
@@ -60,7 +60,7 @@
           $<%= total.toFixed(2); %><br><br>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
         Remaining:
         </div>
@@ -78,15 +78,15 @@
           <% for (var g = 0; g < groceries.length; g++) { %>
           <% var currentItem = groceries[g]; %>
 
-            <div class="container" id="grocery_<%= currentItem._id %>">
+            <div class="container listitem" id="grocery_<%= currentItem._id %>">
 
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding right">
                   <input type="checkbox" class="strike_button" id="<%= currentItem._id %>"></input>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 left">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10 left">
                   <%= currentItem.quantity %>&nbsp&nbsp<%= currentItem.item %>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+                <div class="col-lg-6 col-md-5 col-sm-6 col-xs-11">
                   $<%= currentItem.price.toFixed(2); %>/each
                   = $<%= currentItem.cost.toFixed(2) %>
                   <a class="editButton btn-link" id="<%= currentItem._id %>">
@@ -95,6 +95,9 @@
                   <a class="deleteButton btn-link" id="<%= currentItem._id %>">
                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                   </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p> <br> </p>
                 </div>
 
             </div>
