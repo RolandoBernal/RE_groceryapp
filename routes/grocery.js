@@ -79,7 +79,7 @@ router.get('/:id', function (req, res) {
     // Find was successful
     } else {
       res.render('grocery', {
-        title : 'Grocery Shpping List',
+        title : 'Grocery Shopping List',
         grocery: thisItem
       });
     }
@@ -100,6 +100,7 @@ router.get('/', function (req, res) {
   // ***********************************************
   res.render('grocery', {
     title : 'Grocery Shopping List',
+    // action: "EDIT",
     grocery: {
       item: '',
       quantity: 1,
@@ -151,7 +152,7 @@ router.post('/', function (req, res, next) {
             sendError(req, res, err, "Could not save item with updated information");
           } else {
             res.redirect('/grocery/list');
-            // res.redirect('/user/profile');
+            // res.redirect('/grocery/list?action=' + "EDIT");
           }
         });
       }
