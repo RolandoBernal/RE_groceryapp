@@ -12,9 +12,12 @@ body {
 
 .right{
   text-align: right;
-  alight: right;
+  align: right;
 }
 
+.center{
+align: center;
+}
 .underline{
   text-decoration: underline;
 }
