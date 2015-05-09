@@ -12,9 +12,13 @@ body {
 
 .right{
   text-align: right;
-  alight: right;
+  align: right;
 }
 
+.listitem{
+  background-color: lightgray;
+  opacity: .95;
+}
 .underline{
   text-decoration: underline;
 }
