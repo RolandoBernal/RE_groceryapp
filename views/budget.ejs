@@ -41,10 +41,9 @@
       <div class="welcome-register">
         <h3>Please enter your budget</h3>
       </div>
-      <div class="formfield">
-        <div class="formfield--prompt">Budget: </div>
-        <input type="text" id="budget" name="budget" value="<%= user.budget%>">
-      </div>
+          <div class="formfield--prompt"><p id="money">$</p>
+            <input type="text" id="budget" name="budget" value="<%= user.budget%>">
+          </div>
       <input class="addBudgetButton btn" type="submit" value="Save Budget"></input>
     </form>
 

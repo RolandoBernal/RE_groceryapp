@@ -43,12 +43,6 @@ p{
     margin: 30px 0 60px;
  }
 
-/*a {
-  color: #00B7FF;
-  text-decoration: underline;
-  cursor: pointer;
-}*/
-
 .the-header {
   float: left;
   position: fixed;
@@ -102,6 +96,7 @@ input + label.error {
 
 .welcome-register {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .welcome-profile {
@@ -129,6 +124,22 @@ hr{
   color: black;
   background-color: black;
   opacity: .6;
-
-height: 2px;
+  height: 2px;
 }
+
+#budget {
+  width: 85%;
+  float: right;
+}
+
+#money {
+  width: 10%;
+  float: left;
+  font-size: 1em;
+  padding: .8em .5em;
+}
+
+
+
+
+
