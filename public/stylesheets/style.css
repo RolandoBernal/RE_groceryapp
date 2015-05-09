@@ -115,6 +115,16 @@ input + label.error {
   border-radius: 25px;
 }
 
-#loginForm {
+#loginForm,
+#groceryForm {
   background-color: rgba(54, 25, 25, .085);
 }
+
+#groceryForm {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+
+
+
